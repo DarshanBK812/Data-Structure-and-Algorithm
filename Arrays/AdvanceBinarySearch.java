@@ -3,8 +3,9 @@ package Arrays;
 public class AdvanceBinarySearch {
 
 	
+	
 	public static void main(String[] args) {
-		int arr [] = {40, 50, 60, 10, 20, 30};
+		int arr [] = {40, 50, 60, 10, 20, 10};
 		
 		for(int i = 0 , j = arr.length-1 ; i<=j ; i++ , j--) {
 			
