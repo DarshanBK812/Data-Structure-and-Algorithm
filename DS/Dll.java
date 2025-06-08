@@ -93,9 +93,10 @@ public class Dll {
 			for(int i =1;i<pos;i++) {
 				temp = temp.next;
 			}
-			temp.prev.next = temp.next;
-			temp.next.prev = temp.prev;
-			temp = null;
+			n.next = temp.next;
+			n.prev = temp;
+			temp.next.prev = n;
+			temp.next = n;
 		}
 		count--;
 	}
