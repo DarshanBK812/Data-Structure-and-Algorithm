@@ -95,9 +95,13 @@ public class DoubleLinkedList {
 		}
 		else {
 			Node2 temp = head;
-			for(int i = 1 ; i<=pos;i++) {
+			for(int i = 1 ; i<pos;i++) {
 				temp = temp.next;
 			}
+			temp.next.prev = n;
+			n.next = temp.next;
+			temp.next = n;
+			n.prev = temp;
 		}
 		
 	}
