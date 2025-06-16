@@ -47,7 +47,7 @@ public class Dll {
 				temp=temp.next;
 			}
 			n.next = temp.next;
-			n.next = temp;
+			n.prev = temp;
 			temp.next.prev = n;
 			temp.next = n; 
 		}
